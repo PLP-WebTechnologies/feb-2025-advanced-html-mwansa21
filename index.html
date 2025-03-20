@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-pop Fan Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff0066;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .contact-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .contact-table th, .contact-table td {
+            border: 1px solid #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .contact-table th {
+            background-color: #ff0066;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            background-color: #333;
+            color: white;
+        }
+
+        .form-group {
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        .form-submit {
+            background-color: #ff0066;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-submit:hover {
+            background-color: #e5005c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the K-pop Fan Club!</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+
+        <!-- Ordered List with Roman Numerals -->
+        <h2>Top 5 K-pop Groups</h2>
+        <ol type="I">
+            <li>BTS</li>
+            <li>BLACKPINK</li>
+            <li>EXO</li>
+            <li>Twice</li>
+            <li>Seventeen</li>
+        </ol>
+
+        <!-- External Image from Pexels -->
+        <h2>Check out this amazing K-pop artwork!</h2>
+        <img src="https://media.istockphoto.com/id/1484810402/photo/k-pop-korea-music-neon-light-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=IbI_xhqO0bnEsjutZnq0BaCoPXWEBHC5-X866xhat3Y=" alt="K-pop Neon Light 3D Illustration">
+
+        <!-- Contact Table -->
+        <h2>Contact Information</h2>
+        <table class="contact-table">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Nomsa Ngoma</td>
+                <td>123 K-pop St.</td>
+                <td>555-1234</td>
+                <td>nomsangoma@email.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 Hallyu Rd.</td>
+                <td>555-5678</td>
+                <td>janesmith@email.com</td>
+            </tr>
+            <tr>
+                <td>Prudence Kunda</td>
+                <td>789 Seoul Ave.</td>
+                <td>555-9101</td>
+                <td>prudencekunda@email.com</td>
+            </tr>
+            <tr>
+                <td>Emily Park</td>
+                <td>321 Idol Blvd.</td>
+                <td>555-1122</td>
+                <td>emilypark@email.com</td>
+            </tr>
+            <tr>
+                <td>Chris Kim</td>
+                <td>654 K-pop Lane</td>
+                <td>555-3141</td>
+                <td>chriskim@email.com</td>
+            </tr>
+        </table>
+
+        <!-- Registration Form -->
+        <h2>Sign Up for the K-pop Fan Club</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="favorite-group">Favorite K-pop Group:</label>
+                <select id="favorite-group" name="favorite-group" required>
+                    <option value="bts">BTS</option>
+                    <option value="blackpink">BLACKPINK</option>
+                    <option value="exo">EXO</option>
+                    <option value="twice">Twice</option>
+                    <option value="seventeen">Seventeen</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <div class="form-group">
+                <label>Interests:</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="dance" name="interests" value="dance">
+                <label for="dance">Dance</label>
+                <input type="checkbox" id="fashion" name="interests" value="fashion">
+                <label for="fashion">Fashion</label>
+            </div>
+
+            <div>
+                <button type="submit" class="form-submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
